@@ -57,6 +57,8 @@ Test F1 Score: 0.859
 The XGBoost model was my final model of choice, as it ultimately produced the best accuracy score of 0.923
 Across all models, the Pop genre class had the lowest predicted accuracy. This may be partly due to fewer data points. The majority of misclassified Pop songs were classified as Underground Rap across all models. This may be because Pop is a general term or sub-genre under a wide range of genres. Since Rap/Hiphop consistently make the top music charts in the U.S. and are often sub-categorized as Pop, this may explain the errors in Pop classification.
 
+I plotted the feature importance on both F score and gain metrics. For gain, the top 5 most important features were Tempo, Instrumentalness, Duration, Danceability, and Speechiness. Tempo was the most significant feature in predicting the genre with an F score about 1.5x higher than Instrumentalness.
+
 ## Tools
 
 Numpy, Pandas, SqlAlchemy for data manipulation <br>
